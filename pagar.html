@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="CssFinal/allcolors.css">
+</head>
+<body>
+    <!-- <script>
+        // JavaScript para mostrar el alert box al cargar la página
+        window.onload = function() {
+        var mensaje = "Esta forma de pago es solo un metodo representativo, tus datos no son guardados ni compartidos con terceros";
+        alert(mensaje);
+        };
+        </script> -->
+    <form class="formpago"> 
+        <h1>Ingrese su información de pago</h1><br><br>
+        <label for="numerotarjeta">Numero de tarjeta</label>
+        <img src="ImgFinal/medios de pago.png" alt="visa">
+        <br>
+        <input type="number" name="numerotarjeta" id="numerotarjeta" required><br><br>
+        
+        <label for="nombretitular">Nombre del Titular</label><br>
+        <input type="text" name="nombretitular" id="nombretitular" readonly><br><br>
+        <section class="divfechacvv">
+            <div>
+                <label for="fechadevencimiento">Fecha de vencimiento</label><br>
+                <input type="number" name="fechadevencimiento" id="fechadevencimiento" placeholder="MM/AA" required>
+
+            </div>
+            <div>
+                <label for="codigoseguridad">Codigo de seguridad</label><br>
+                <input type="number" name="codigoseguridad" id="codigoseguridad" placeholder="CVV" required >
+        
+            </div>
+        </section>
+        
+        <p>Nuestro sistema de pago está diseñado pensando en su seguridad y tranquilidad.
+            Utilizamos las últimas tecnologías de encriptación para garantizar que sus transacciones sean seguras.
+            Puede realizar sus compras con confianza, sabiendo que sus datos financieros están protegidos. En [nombre de tu empresa],
+            la seguridad de su información es nuestra prioridad, permitiéndole disfrutar de una experiencia de compra sin preocupaciones.</p>
+            <div style="display: flex; width: 80%;">
+                <button>Cancelar</button>
+                <button>Pagar</button>
+            </div>
+            
+    </form>
+</body>
+</html>

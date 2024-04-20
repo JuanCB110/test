@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta</title>
+    <link rel="stylesheet" href="CssFinal/allcolors.css">
+    <link rel="stylesheet" href="CssFinal/navBar2.css">
+    <script src="JSFinal/barraDesplegable.js"></script>
+</head>
+<body>
+    <script>
+        // JavaScript para mostrar el alert box al cargar la página
+        window.onload = function() {
+        var mensaje = "Aqui se mostrara el historial de compras que realice cuando este la opcion de registrar usuario";
+        alert(mensaje);
+        };
+        </script>
+
+    <header class="header">
+        <div class="logo">
+            <img src="ImgFinal/LogoNavBar.png" alt="Logo de la marca">
+        </div>
+        <div class="search">
+            <img src="ImgFinal/busqueda.png" alt="barra de busqueda" style="width: 100%;">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="cesta.html">Cesta</a></li>
+                <li><a href="#" class="nav-account">Mi cuenta</a></li>
+            </ul>
+        </nav>
+        
+        <a href="#" class="btn"><img src="ImgFinal/perfil.png" alt="perfil" style="width: 25%; float: right;"></a>
+        
+    </header>
+    <nav class="vertical-navbar" id="verticalNavbar">
+        <ul>
+            <li><a href="config.html">Configuración</a></li>
+            <li><a href="miscompras.html">Mis compras</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="Menuprincip.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="miscomprasdiv">
+            <div class="historialimg">
+                <h1>Mis compras</h1>
+            </div>
+        </div>
+
+        <div class="historial">
+            <div class="historialimg">
+                <img src="ImgFinal/pantalones para gallos.jpg" alt="pantalo">
+            </div>     
+            <div style=" width: 100%;">
+                <h2>Pantalones</h2>
+                <h5>Toyota</h5>
+                <p>$300</p><br><br>
+                <h4>Estatus del pedido: Completado</h4>
+                <h4>No.Guia RZ1231421425</h4>
+                <h4 style="text-align: right;">x3</h4>
+                <p style="text-align: right;">Total $900</p>
+            </div>
+        </div>
+    </section>

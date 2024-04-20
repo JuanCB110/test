@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="CssFinal/allcolors.css">
+    <script src="JSFinal/formularioDinamic.js"></script>
+</head>
+<body>
+    <script>
+        // JavaScript para mostrar el alert box al cargar la página
+        window.onload = function() {
+        var mensaje = "Esta seccion de registrarse no esta disponible, para iniciar sesion hagalo desde el apartado de iniciar sesion";
+        alert(mensaje);
+        };
+        </script>
+    <div class="formularioR">
+        <form id="primerFormulario">
+            <br><br>
+            <h1> Crear Cuenta</h1>
+            <br>
+            <label for="nombreR"><b>Ingrese su Nombre(s)</b></label><br><br>
+            <input type="text" name="nombreR" id="nombreR" required><br><br>
+
+            <label for="apellidosR"><b>Ingrese sus Apellidos</b></label><br><br>
+            <input type="text" name="apellidosR" id="apellidosR" required><br><br>
+
+            <label for="fechaNacR"><b>Ingrese su fecha de Nacimiento</b></label><br><br>
+            <input type="date" name="fechaNacR" id="fechaNacR" required><br><br><br>
+
+            <button class="botones" id="cancelarBtn">Cancelar</button>
+            <button class="botones" id="siguienteBtn">Siguiente</button><br><br>
+        </form>
+
+        <!-- Segundo Formulario oculto -->
+        <form id="segundoFormulario" style="display: none;">
+            <br><br>
+            <h1> Crear Cuenta</h1>
+            <br>
+            <label for="nombreUsuarioR"><b>Ingrese su Nombre de Usuario</b></label><br><br>
+            <input type="text" name="nombreUsuarioR" id="nombreUsuarioR" required><br><br>
+
+            <label for="correoR"><b>Ingrese su Correo Electronico</b></label><br><br>
+            <input type="email" name="correoR" id="correoR" required><br><br>
+
+            <label for="contraR"><b>Ingrese una Contraseña</b></label><br><br>
+            <input type="password" name="contraR" id="contraR" required><br><br>
+
+            <label for="confirmContraR"><b>Confirmar Contraseña</b></label><br><br>
+            <input type="password" name="confirmContraR" id="confirmContraR" required><br><br><br>
+
+            <button class="botones" id="retrocederBtn">Retroceder</button>
+            <button class="botones" id="finalizarBtn">Finalizar</button><br><br>
+        </form>
+    </div>
+    <script></script>
+</body>
+</html>

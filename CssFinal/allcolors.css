@@ -1,0 +1,609 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: #F5F5F5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* ---------------MULTIPLES USOS DURANTE EL CODIGO---------------- */
+.botones{
+    background-color: #fff;
+    color: #9F79FF;
+    border-radius: 5px;
+    border-color: #9F79FF;
+    padding: 0% 2%;
+    margin: 0 1% 2%;
+    border-style: solid;
+}
+
+.botones:hover{
+    background-color: #9F79FF;
+    color: #fff;
+}
+
+/* --------------------------------------------------------------- */
+/* .............................................Seccion de menu principal............................................ */
+/* Imagen gigante del logo y de los productos principales*/
+.imgGigante{
+    border-radius: 100%;
+    width: 40%;
+    margin: 2% 25% 0% 30%;
+    border: solid 6px  #9F79FF;     
+}
+/* Botones grandes como losde registrarse */
+.centrarBloque{
+    margin: auto;
+    margin-bottom: 1%;
+    text-align: left;
+    margin-top: 2%;
+    background-color: #9F79FF;
+    border-radius: 5px;
+    width: 26%;
+    padding: 20px 70px;
+}
+
+.botonGrande{ 
+    color: #fff;
+    text-decoration: none;
+    font-size: larger;
+    margin-left: -15%; 
+}
+
+.flecha{
+    float: right;
+    width: 20%;
+    margin-right: -22%;
+    margin-top: -3%;
+}
+
+/* ...........................................Seccion de Contacto............................................. */
+.divFondo{
+    background-image: url(../ImgFinal/FondoContacto.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8%;
+}
+
+.textoFondo{
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.textoFondo h1{
+    text-align: center;
+    font-size: 250%;
+}
+
+.formularioContacto{
+    float: left;
+    margin-left: 5%;
+    color: #6E7076;
+    width: 50%;
+    /* background-color: #6E7076; */
+}
+.formularioContacto input{
+    border-color: #9F79FF;
+    border-radius: 5px;
+    border-style: solid;
+    width: 100%;
+}
+
+/* El tamaño del input de mensaje */
+.mensajeTamaño{
+    padding: 10% 0%;
+}
+
+.divIconos{
+    margin-left: 5%;
+    margin-top: 1%;
+    float: left;
+    width: 35%;
+    /* padding-bottom: 50%; */
+}
+.iconosDeContacto{
+    float: left;
+    width: 10%;
+    margin: 2%;
+}
+
+/* .........................................Iniciar Sesion........................................... */
+.formularioIS{
+    width: 25%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    background-color: #fff;
+    border: solid 2px;
+    border-color: #9F79FF;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);   
+}
+.formularioIS p{
+    color: #6E7076;
+    font-size: small;
+}
+.formularioIS label{
+    color: #6E7076;
+}
+.formularioIS input{
+    border-color: #6E7076;
+    border-radius: 5px;
+    border-style: solid;
+    width: 70%;
+    padding: 4px 0px;
+}
+.formularioIS button{
+    font-size: medium;
+    padding: 0px 20px;
+}
+
+/* ................................................Registrarse..................................................... */
+.formularioR{
+    width: 25%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    background-color: #fff;
+    border: solid 2px;
+    border-color: #9F79FF;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);   
+}
+.formularioR p{
+    color: #6E7076;
+    font-size: small;
+}
+.formularioR h1{
+    color: #9F79FF;
+}
+
+.formularioR label{
+    color: #6E7076;
+}
+.formularioR input{
+    border-color: #FEBFFF;
+    border-radius: 5px;
+    border-style: solid;
+    width: 70%;
+    padding: 4px 0px;
+    color: #6E7076;
+}
+.formularioR button{
+    font-size: medium;
+    padding: 0px 20px;
+}
+
+.formularioR a{
+    text-decoration: none;
+    color: #9F79FF;
+}
+
+.formularioR a:hover{
+    color: #fff;
+}
+
+/* ................................Menu Compras osea el principal donde salen todos los productos xdxd....................... */
+.destacados{
+    display: flex;
+    padding:3% 5%;
+}
+.destacadosDesc{
+    background-color: #fff;
+    border: solid 1px #9F79FF;
+    border-radius: 10px;
+    width: 35%;
+    margin-right: 20%;
+    padding: 2%;
+}   
+.destacadosDesc h1{
+    color: #9F79FF;
+    font-size: xx-large;
+}
+.destacadosDesc h4{
+    color: #9F79FF;
+}
+.destacadosDesc h5{
+    color: #6E7076;
+    font-size: medium;
+}
+.destacadosDesc p{
+    color: #6E7076;
+    margin: 5% 0 65%
+}
+.divbotonmenos{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 0 0 10%;
+    color: #6E7076;
+}
+
+.divbotonmenos p{
+    color: #6E7076;
+}
+.botonmenos{
+    width: 8%;
+    height: 0;
+    padding-bottom: 9%;
+    background-color: #fff;
+    border: none;
+    margin: 0 2%;
+}
+.botonmenos:hover{
+    scale: 1.1;
+}
+.botonmenos img{
+    width: 100%;
+}
+
+.destacadosComprar{
+    background-color:#9F79FF ;
+    color: #fff;
+    padding: 0.5% 3% 0.5%;
+    width: 90%;
+    border: solid 1px #6E7076;
+    border-radius: 5px;
+}
+.destacadosComprar:hover{
+    background-color: #8657fd;
+}
+.destacadosCarrito{
+    width: 8%;
+    text-align: center;
+    background-color: #9F79FF;
+    border: solid 1px #6E7076;
+    border-radius: 5px;
+    padding: 0.5%;
+    color: #fff;
+}
+.destacadosCarrito:hover{
+    background-color: #8657fd;
+}
+
+.destacadosfoto{
+    width: 45%;
+    text-align: center;
+}
+.destacadosfoto img{
+    width: 100%;
+    padding: 2%;
+    background-color: #fff;
+    border-radius:50% ;
+}
+.destacadosfoto button{
+    color: #6E7076;
+    background-color: #fff;
+    border: solid 1px;
+    border-radius: 50%;
+    width: 4.5%; 
+}
+
+/* ......................................Todos los productos......................................... */
+.fondotodosLP{
+    background-color: #fff;
+    padding-top: 2%;
+}
+.fondotodosLP h1{
+    color: #9F79FF;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.todosLP{
+    display: flex;
+    padding: 3%;
+    margin: 3% 4%;
+    background-color: #fff;
+}
+
+.indivtodosLP{
+    border: solid 1px #9F79FF;
+    margin: 0 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
+    padding: 2%;
+    width: 70%;
+}
+
+.indivtodosLP img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.indivtodosLP h1{
+    text-align: left;
+    font-size: x-large;
+}
+
+.indivtodosLP h4{
+    color: #9F79FF;
+    font-size: medium;
+}
+.indivtodosLP h3{
+    color: #6E7076;
+    font-size: large;
+}
+
+.indivtodosLP h5{
+    color: #6E7076;
+    font-size: small;
+}
+
+.indivtodosLP p{
+    color:#6E7076 ;
+    font-size: medium;
+    margin-bottom: 2%;
+}
+
+.indivtodosLP input{
+    width: 29%;
+    border-radius: 5px;
+    border: solid 1px #6E7076;
+    margin-bottom: 2%;
+    color: #6E7076;
+    font-size: medium;
+}
+
+.boton1indivtodosLP{
+    width: 80%;
+    color: #fff;
+    background-color: #9F79FF;
+    border: solid 1px #6E7076;
+    border-radius: 5px;
+    padding: 0 0 1%;
+}
+.boton1indivtodosLP:hover{
+    background-color: #8657fd;
+}
+.boton2indivtodosLP{
+    width: 15%;
+    color: #fff;
+    background-color: #9F79FF;
+    border: solid 1px #6E7076;
+    border-radius: 5px;
+    padding: 0 0 1%;
+}
+.boton2indivtodosLP:hover{
+    background-color: #8657fd;
+}
+
+/* ................................Botones para admin................................... */
+.edit{
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #9F79FF;
+    color: #9F79FF;
+    font-size: medium;
+    width: 20%;
+}
+.edit:hover{
+    background-color: #8657fd;
+    color: #fff;
+    cursor: pointer;
+}
+/* ...............................Botones en Configuración................................ */
+.claro{
+    background-color: #fff;
+    color: #6E7076;
+    border: solid 1px #9F79FF;
+    border-radius: 5px;
+    margin-bottom:4% ;
+}
+
+.claro:hover{
+    background-color: #9F79FF;
+    color: #fff;
+}
+
+.oscuro{
+    background-color: #3b3b3b;
+    color: #fff;
+    border: solid 1px #9F79FF;
+    border-radius: 5px;
+    margin: 0 2%;
+}
+.oscuro:hover{
+    background-color: #6E7076;
+}
+
+.uas{
+    background-color: #5678fe;
+    color: #fff;
+    border: solid 1px #9F79FF;
+    border-radius: 5px;
+}
+.uas:hover{
+    background-color:#3157f3 ;
+}
+
+.noseporquenojala{
+    color: #9F79FF;
+    text-decoration: none;
+}
+
+.semeolvidoelh1{
+    color: #9F79FF;
+    font-size: xx-large;
+}
+
+/* ..........................................Cesta............................................. */
+.dividir{
+    display: flex;
+}
+.mitad1{
+    width: 60%;
+    margin: 3% 3%;
+}
+
+.p1mitad1{
+    background-color: #fff;
+    border: solid 1px #9F79FF;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.p1mitad1 h2{
+    color: #9F79FF;
+}
+.p1mitad1 label{
+    color: #6E7076;
+    font-size: medium;
+}
+.p2mitad1flex{
+    display: flex;    
+    background-color: #fff;
+    border: solid 1px #9F79FF;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+.p2mitad1foto{
+    width: 20%;
+    margin-right: 2%;
+    display: flex;
+}
+.p2mitad1foto img{
+    width: 100%;
+    border-radius: 10px;
+}
+.p2mitad1foto input{
+    margin-right: 2%;
+}
+.p2mitad1{
+  margin-left: 2%;
+}
+
+.p2mitad1 h1{
+    color: #6E7076;
+    margin-bottom: 2%;
+}
+.p2mitad1 h2{
+    color: #9F79FF;
+    margin-bottom: 2%;
+}
+.p2mitad1 p{
+    margin-top: 5%;
+}
+.mitad2{
+    width: 25%;
+    margin: 3% 3%;
+}
+.mitad2p1{
+    background-color: #fff;
+    border: solid 1px #9F79FF;
+    border-radius: 10px;
+    padding: 3%;
+}
+.mitad2p1 h1{
+    color: #9F79FF;
+    margin-bottom: 4%;
+}
+.mitad2p1 h2{
+    color: #6E7076;
+    margin-bottom: 2%;
+    font-size: medium;
+}
+
+.mitad2p1 p{
+    margin-top: 5%;
+}
+.mitad2p1 button{
+    margin-top: 4%;
+    font-size: medium;
+}
+
+/* ............................................Mis Compras................................... */
+.miscomprasdiv{
+    width: 15%;
+    background-color: #3157f3;
+    padding: 1%;
+    margin: 2% 10%;
+    background-color: #fff;
+    color: #9F79FF;
+    border-radius: 10px;
+    border: solid 1px #9F79FF;
+}
+
+.historial{
+    width: 80%;
+    background-color: #fff;
+    padding: 1%;
+    margin: 2% auto;
+    border: solid 1px #9F79FF;
+    border-radius: 10px;
+    display: flex;
+}
+.historial h2{
+    color: #9F79FF;
+}
+.historial h5{
+    color: #6E7076;
+    font-size: small;
+}
+.historial h4{
+    color: #6E7076;
+    font-size: medium;
+}
+.historialimg{
+    margin-right: 2%;
+
+}
+.historialimg img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* .....................................................Pagar............................................... */
+.formpago{
+    width: 40%;
+    padding: 3%;
+    margin: 3% auto;
+    border: solid 1px #9F79FF;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.formpago h1{
+    text-align: center;
+    color: #9F79FF;
+    font-size: xx-large;
+}
+.formpago label {
+    text-align: left;
+    color: #6E7076;
+    margin-right: 15%;
+}
+.formpago input{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px;
+    padding: 0.5% 0;
+}
+.formpago img{
+    width: 25%;
+    float: right;
+}
+.formpago p{
+    color: #6E7076;
+    font-size: small;
+}
+.formpago button{
+    width: 15%;
+    background-color: #9F79FF;
+    color: #fff;
+    border-radius: 5px;
+    border: solid 1px #6E7076;
+    padding: 0.5% 2%;
+    margin: 0 0% 0 30%;
+}
+.formpago button:hover{
+    background-color: #8657fd;
+}
+
+.divfechacvv{
+    display: flex;
+}
+.divfechacvv input{
+    width: 69%;
+    padding-left: 2%;
+}
