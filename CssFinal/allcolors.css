@@ -1,11 +1,28 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 body{
     background-color: #F5F5F5;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* ---------------MULTIPLES USOS DURANTE EL CODIGO---------------- */
+
+.botonesy{
+    background-color: #fff;
+    color: #9F79FF;
+    border-radius: 5px;
+    border-color: #9F79FF;
+    padding: 0% 2%;
+    margin: 0%;
+    margin-left: 100%;
+    border-style: solid;    
+}
+
+.botonesy:hover{
+    background-color: #9F79FF;
+    color: #fff;
+}
+
 .botones{
     background-color: #fff;
     color: #9F79FF;
@@ -14,16 +31,108 @@ body{
     padding: 0% 2%;
     margin: 0 1% 2%;
     border-style: solid;
+    transition: transform 0.2s ease;
 }
 
 .botones:hover{
     background-color: #9F79FF;
     color: #fff;
+    transform: scale(1.05);
 }
 
 /* --------------------------------------------------------------- */
 /* .............................................Seccion de menu principal............................................ */
 /* Imagen gigante del logo y de los productos principales*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* ------------------BARRA DE NAVEGACIÓN--------------------------- */
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+}
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 80px;
+    transition: transform 0.2s ease;
+}
+.logo img:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .1s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.02);
+}
+.navegacion ul li a{
+	color: #6E7076;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #9F79FF;
+	transform: scale(1.02);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #fff;
+	position: absolute;
+	width: 100%;
+    border-radius: 5px;
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+}
+.navegacion .submenu .hijos li :hover{
+    background-color: #9F79FF;
+    border-radius: 10px;
+}
+.navegacion .submenu .hijos li a:hover{
+    color: #fff;
+}
+
 .imgGigante{
     border-radius: 100%;
     width: 40%;
@@ -91,7 +200,10 @@ body{
 
 /* El tamaño del input de mensaje */
 .mensajeTamaño{
-    padding: 10% 0%;
+    padding-bottom: 10%;
+    resize: none; /* Evita que el campo de entrada se redimensione */
+    box-sizing: border-box; /* Asegura que el tamaño total incluya el relleno */
+    font-size: medium;
 }
 
 .divIconos{
@@ -118,6 +230,10 @@ body{
     border-color: #9F79FF;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);   
+    transition: box-shadow 0.5s ease;
+}
+.formularioIS:hover{
+    box-shadow: 5px 5px 10px rgba(159, 121, 255, 0.8);
 }
 .formularioIS p{
     color: #6E7076;
@@ -149,6 +265,10 @@ body{
     border-color: #9F79FF;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);   
+    transition: box-shadow 0.5s ease;
+}
+.formularioR:hover{
+    box-shadow: 5px 5px 10px rgba(159, 121, 255, 0.8);
 }
 .formularioR p{
     color: #6E7076;
@@ -187,6 +307,7 @@ body{
 .destacados{
     display: flex;
     padding:3% 5%;
+    width: 100%;
 }
 .destacadosDesc{
     background-color: #fff;
@@ -195,7 +316,12 @@ body{
     width: 35%;
     margin-right: 20%;
     padding: 2%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }   
+.destacadosDesc:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 10px rgba(159, 121, 255, 0.8);
+}
 .destacadosDesc h1{
     color: #9F79FF;
     font-size: xx-large;
@@ -229,9 +355,10 @@ body{
     background-color: #fff;
     border: none;
     margin: 0 2%;
+    transition: transform 0.2s ease;
 }
 .botonmenos:hover{
-    scale: 1.1;
+    transform: scale(1.1);
 }
 .botonmenos img{
     width: 100%;
@@ -244,9 +371,12 @@ body{
     width: 90%;
     border: solid 1px #6E7076;
     border-radius: 5px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 .destacadosComprar:hover{
     background-color: #8657fd;
+    transform: scale(1.02);
+    cursor: pointer;
 }
 .destacadosCarrito{
     width: 8%;
@@ -256,9 +386,12 @@ body{
     border-radius: 5px;
     padding: 0.5%;
     color: #fff;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 .destacadosCarrito:hover{
     background-color: #8657fd;
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 .destacadosfoto{
@@ -270,6 +403,11 @@ body{
     padding: 2%;
     background-color: #fff;
     border-radius:50% ;
+    transition: box-shadow 0.2s ease, transform 0.2s ease; /* Agrupando las transiciones */
+}
+.destacadosfoto img:hover{
+    box-shadow: 5px 5px 10px rgba(159, 121, 255, 0.8);
+    transform: scale(1.02);
 }
 .destacadosfoto button{
     color: #6E7076;
@@ -290,26 +428,55 @@ body{
     font-size: xx-large;
 }
 
-.todosLP{
+.todosLP {
     display: flex;
+    flex-wrap: wrap;
     padding: 3%;
     margin: 3% 4%;
     background-color: #fff;
 }
 
 .indivtodosLP{
-    border: solid 1px #9F79FF;
-    margin: 0 5%;
+    border: solid 1px rgb(159, 121, 255);
+    flex: 0 0 calc(33.33% - 2 * 3%);
+    margin: 0 3% 3% 0;
+    margin-left: 3%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
     padding: 2%;
     width: 70%;
+    position: relative;
+    /* transition: transform 0.5s ease; */
+    transition: box-shadow 0.5s ease; /* Transición lenta */
 }
 
-.indivtodosLP img{
+.indivtodosLP:hover{
+    box-shadow: 5px 5px 10px rgba(159, 121, 255, 0.8);
+    /* transform: scale(1.01); */
+}
+
+/* Para asegurarte de que el último elemento de cada fila no tenga margen a la derecha */
+.indivtodosLP:nth-child(3n) {
+    margin-right: 0%;
+}
+
+/* Para que los elementos de la última fila se alineen a la izquierda */
+.todosLP::after {
+    content: '';
+    flex: auto;
+}
+
+.indivtodosLP img {
     border-radius: 5px;
     width: 100%;
+    transition: transform 0.3s ease; /* Transición para suavizar el efecto */
 }
+
+.indivtodosLP img:hover {
+    cursor: pointer;
+    transform: translateY(-5px); /* Aplica un pequeño desplazamiento hacia arriba */
+}
+
 
 .indivtodosLP h1{
     text-align: left;
@@ -349,23 +516,34 @@ body{
     width: 80%;
     color: #fff;
     background-color: #9F79FF;
-    border: solid 1px #6E7076;
+    border: solid 1px #8657fd;
     border-radius: 5px;
     padding: 0 0 1%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 .boton1indivtodosLP:hover{
     background-color: #8657fd;
+    transform: scale(1.02);
+    cursor: pointer;
 }
 .boton2indivtodosLP{
-    width: 15%;
+    width: 11%;
     color: #fff;
     background-color: #9F79FF;
     border: solid 1px #6E7076;
     border-radius: 5px;
     padding: 0 0 1%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 .boton2indivtodosLP:hover{
     background-color: #8657fd;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.absoluto{
+    position: absolute;
+    bottom: 3%;
 }
 
 /* ................................Botones para admin................................... */
@@ -430,6 +608,7 @@ body{
 /* ..........................................Cesta............................................. */
 .dividir{
     display: flex;
+    width: 100%;
 }
 .mitad1{
     width: 60%;
@@ -457,6 +636,10 @@ body{
     border-radius: 10px;
     padding: 2%;
     margin-bottom: 1%;
+    transition: box-shadow 0.5s ease;
+}
+.p2mitad1flex:hover{
+    box-shadow: 5px 5px 10px rgba(159, 121, 255, 0.8);
 }
 .p2mitad1foto{
     width: 20%;
@@ -471,7 +654,7 @@ body{
     margin-right: 2%;
 }
 .p2mitad1{
-  margin-left: 2%;
+    margin-left: 2%;
 }
 
 .p2mitad1 h1{
@@ -494,6 +677,10 @@ body{
     border: solid 1px #9F79FF;
     border-radius: 10px;
     padding: 3%;
+    transition: box-shadow 0.5s ease;
+}
+.mitad2p1:hover{
+    box-shadow: 5px 5px 10px rgba(159, 121, 255, 0.8);
 }
 .mitad2p1 h1{
     color: #9F79FF;
@@ -533,6 +720,11 @@ body{
     border: solid 1px #9F79FF;
     border-radius: 10px;
     display: flex;
+    transition: box-shadow 0.5s ease;
+}
+.historial:hover{
+    box-shadow: 5px 5px 10px rgba(159, 121, 255, 0.8);
+
 }
 .historial h2{
     color: #9F79FF;
@@ -547,7 +739,6 @@ body{
 }
 .historialimg{
     margin-right: 2%;
-
 }
 .historialimg img{
     width: 100%;
@@ -606,4 +797,67 @@ body{
 .divfechacvv input{
     width: 69%;
     padding-left: 2%;
+}
+
+/* Graficas */
+.grafica {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.grafica section {
+    margin: 10px;
+    min-width: 300px; /* Tamaño mínimo deseado */
+    min-height: 200px; /* Tamaño mínimo deseado */
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc; /* Agrega un borde para mayor claridad */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+/* Barra de busqueda */
+
+.barrabusqueda{
+    text-align: center;
+}
+.barrabusqueda input{
+    border-color: #9F79FF;
+    border-radius: 8px;
+    border-style: solid;
+    width: 30%;
+    color: #9F79FF;
+}
+.barrabusqueda button{
+    border-color: #9F79FF;
+    border-radius: 7px;
+    color: #9F79FF;
+    background-color: #fff;
+    width: 6%;
+    border-style: solid;
+}
+.barrabusqueda button:hover{
+    background-color: #9F79FF;
+    color: #fff;
 }

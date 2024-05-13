@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Compras</title>
+    <title>Bandeja</title>
     <link rel="stylesheet" href="CssFinal/allcolors.css">
     <link rel="stylesheet" href="CssFinal/navBar2.css">
-    <script type="module" src="BDFinal/miscompras.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="BDFinal/contactoAdmin.js"></script>
 </head>
 <body>
     <header>
@@ -15,17 +14,17 @@
         <a class="logo"><img src="ImgFinal/LogoNavBar.png" alt="Logo" id="logoMarca"></a>
         <nav class="navegacion">
             <ul>
-            <li><a href="cesta.html"> <span class="material-symbols-rounded" style=" vertical-align: bottom; font-size: 2em;">shopping_cart</span></a></li>
             <li class="submenu">
-                
+    
                 <!-- Cambiar por el ID del usuario -->
-                <a href="#" id="cuentaCC"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+                <a href="#" id="cuentaCC"> &nbsp; &nbsp; &nbsp;Usuario &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
                 <ul class="hijos"> <br>
                     <!-- Barra desplegable personalizable -->
-                <li><a href="config.html">Configuracion</a></li>
-                <li><a href="miscompras.html">Mis compras</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
-                <li><a href="Menuprincip.html" id="csesion">Cerrar Sesión</a></li>
+                    <li><a href="config.html">Configuración</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                    <li><a href="mensajes.html">Bandeja de Correos</a></li>
+                    <li><a href="graficas.html">Graficos</a></li>
+                    <li><a href="Menuprincip.html" id="csesion">Cerrar sesión</a></li>
                 </ul>
             </li>
             </ul>
@@ -36,10 +35,10 @@
     <section>
         <div class="miscomprasdiv">
             <div class="historialimg">
-                <h1>Mis compras</h1>
+                <h1>Mensajes</h1>
             </div>
         </div>
 
-        <div id="compras"></div>
+        <div id="mensajes"></div>
 
     </section>

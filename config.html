@@ -5,49 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuración</title>
     <link rel="stylesheet" href="CssFinal/allcolors.css">
+    <script type="module" src="BDFinal/actualizarUsuario.js"></script>
 </head>
 <body>
 
-    <script>
+    <!--<script>
         // JavaScript para mostrar el alert box al cargar la página
         window.onload = function() {
         var mensaje = "Aqui se podran configurar los datos del usuario cuando este disponible la opcion de registrar";
         alert(mensaje);
         };
-        </script>
+        </script>-->
 
     <section>
-        <form class="formularioIS">
+        <form class="formularioIS" id="formActualizarUsuario">
             <h1 class="semeolvidoelh1">Configuración</h1>
             <label for="nombreC">Nombre</label>
             <br><br>
-            <input type="text" name="nombreC" id="nombreC" readonly style="color: #6E7076; background-color: #e7e7e7; border-color: #6E7076;">
+            <input type="text" name="nombreC" id="nombreC">
+            <br><br>
+
+            <label for="apellidoC">Apellidos</label>
+            <br><br>
+            <input type="text" name="apellidoC" id="apellidoC">
             <br><br>
             
             <label for="correoC">Correo Electronico</label><br><br>
-            <input type="email" name="correoC" id="correoC" readonly style="color: #6E7076; background-color: #e7e7e7; border-color: #6E7076;">
+            <input type="email" name="correoC" id="correoC" readonly style="background-color: #e7e7e7; color:#6e7076; border-color: #e7e7e7;">
             <br><br>
 
             <label for="fechaC">Fecha de nacimiento</label><br><br>
-            <input type="email" name="fechaC" id="fechaC" readonly style="color: #6E7076; background-color: #e7e7e7; border-color: #6E7076;">
+            <input type="date" name="fechaC" id="fechaC" readonly style="background-color: #e7e7e7; color:#6e7076; border-color: #e7e7e7;">
             <br><br>
 
             <label for="nomUsC">Nombre de usuario</label><br><br>
             <input type="text" name="nomUsC" id="nombUsC">
             <br><br>
 
-            <label for="temaC">Tema</label><br>
-            <button class="claro">Claro</button>
-            <button class="oscuro">Oscuro</button>
-            <button class="uas">UAS</button>
-            <br>
-            <a href="#" class="noseporquenojala"><b>¿Cambiar Contraseña?</b></a>
+            <a href="#" class="noseporquenojala" style="cursor: pointer;" id="change"><b>¿Cambiar Contraseña?</b></a>
             <br><br><br>
 
-            <button class="botones">Cancelar</button>
-            <button class="botones">Guardar</button>
+            <button class="botones" id="cancelarB">Cancelar</button>
+            <button class="botones" id="guardarB">Guardar</button>
         </form>
     </section>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

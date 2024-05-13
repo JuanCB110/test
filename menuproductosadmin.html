@@ -3,166 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koki Shop</title>
+    <title>Koki Shop: Admin</title>
     <link rel="stylesheet" href="CssFinal/allcolors.css">
     <link rel="stylesheet" href="CssFinal/navBar2.css">
-    <script src="JSFinal/barraDesplegable.js"></script>
+    <script type = "module" src="JSFinal/barraDesplegableAdmin.js"></script>
 </head>
 <body>
-    <script>
-        // JavaScript para mostrar el alert box al cargar la página
-        // window.onload = function() {
-        // var mensaje = "Esta pagina esta en fase de pruebas, por lo que la funcion de pagar en el carrito o la barra de busqueda no estan disponibles, sin embargo si puede realizar compras individuales";
-        // alert(mensaje);
-        // };
-        </script>
-    <header class="header">
-        <div class="logo">
-            <img src="ImgFinal/LogoNavBar.png" alt="Logo de la marca">
-        </div>
-        <div class="search">
-            <img src="ImgFinal/busqueda.png" alt="barra de busqueda" style="width: 100%;">
-        </div>
-        <nav class="nav-links">
+    <header>
+        <div class="interior">
+        <a class="logo"><img src="ImgFinal/LogoNavBar.png" alt="Logo" id="logoMarca"></a>
+        <nav class="navegacion">
             <ul>
-                <li><a href="cesta.html">Cesta</a></li>
-                <li><a href="#" class="nav-account">Mi cuenta</a></li>
+            <li class="submenu">
+    
+                <!-- Cambiar por el ID del usuario -->
+                <a href="#" id="cuentaCC"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+                <ul class="hijos"> <br>
+                    <!-- Barra desplegable personalizable -->
+                    <li><a href="config.html">Configuración</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                    <li><a href="mensajes.html">Bandeja de Correos</a></li>
+                    <li><a href="graficas.html">Graficos</a></li>
+                    <li><a href="Menuprincip.html" id="csesion">Cerrar sesión</a></li>
+                </ul>
+            </li>
             </ul>
         </nav>
-        
-        <a href="#" class="btn"><img src="ImgFinal/perfil.png" alt="perfil" style="width: 25%; float: right;"></a>
-        
+        </div>
     </header>
-    <nav class="vertical-navbar" id="verticalNavbar">
-        <ul>
-            <li><a href="config.html">Configuración</a></li>
-            <li><a href="miscompras.html">Mis compras</a></li>
-            <li><a href="contacto.html">Contáctanos</a></li>
-            <li><a href="Menuprincip.html">Cerrar sesión</a></li>
-        </ul>
-    </nav>
+
     <section>
         <!-- Apartado donde esta el producto destacado -->
-        <section class="destacados">
+        <section class="destacados" id="productoDestacado">
             <div class="destacadosDesc">
-                <h1>Peluca para fans del temach</h1>
-                <h4>Lenovo</h4>
-                <h2>$200 MXN</h2>
-                <h5>10 unidades disoponibles</h5>
-                <p>Peluca hecha para los mas fans del temach, mi compras
-                    usted estando pedo, se compraria esta peluca, mandela a la verga
-                    mi compa, usted es bien vergas
-                </p>
+                <h1 id="nombreProductoD">N/A</h1>
+                <h4 id="marcaProductoD">N/A</h4>
+                <h2 id="precioProductoD">N/A</h2>
+                <h5 id="cantidadProductoD">N/A</h5>
+                <p id="descripcionProductoD">N/A</p>
                 
-                <div class="divbotonmenos">
-                    <button class="botonmenos"><img src="ImgFinal/minus.png" alt="menos"></button>
-                    <p>0</p>
-                    <button class="botonmenos"><img src="ImgFinal/plus.png" alt="mas"></button>
-                </div>
+                <!-- <div class="divbotonmenos">
+                    <button class="botonmenos"><img src="ImgFinal/minus.png" alt="menos" id="menosD"></button>
+                    <pre id="cantidadD">0</pre>
+                    <button class="botonmenos"><img src="ImgFinal/plus.png" alt="mas" id="masD"></button>
+                </div> -->
                 
-                
-                <button class="destacadosComprar">comprar</button>
-                <button class="destacadosCarrito"><b>+</b></button>
+                <!-- <button class="destacadosCarrito" id="agregarD"><b>+</b></button> -->
             </div>
 
             <div class="destacadosfoto">
-                <img src="ImgFinal/pelucaparajugadoresdelol.jpg" alt="Temach">
-                <button><</button>
-                <button>></button>
+                <img src="" alt="Producto destacado" id="imagenProductoD">
             </div>
         </section>
         
         
-        <!-- 6 productos en total -->
-        <section class="fondotodosLP">
-            <h1 >Todos los productos</h1>
-            <div class="todosLP">
-                <div class="indivtodosLP">
-                    <img src="ImgFinal/cascoparagallos.jpg" alt="casco"> <button class="edit">E</button>
-                    <h1>Casco para gallos</h1><button class="edit">E</button>
-                    <h4>Rebu</h4><button class="edit">E</button>
-                    <p>Casco para gallos nivel 1</p><button class="edit">E</button>
-                    <br>
-                    <h3>$130 MXN</h3><button class="edit">E</button>
-                    <h5>2 Disponibles</h5><button class="edit">E</button>
-                    
-                    <input type="number"> <br>
-                    <button class="boton1indivtodosLP">Comprar</button>
-                    <button class="boton2indivtodosLP">+</button>
-                </div>
-                <div class="indivtodosLP">
-                    <img src="ImgFinal/tanqueparagatos.jpg" alt="casco"><button class="edit">E</button>
-                    <h1>Tanque para gatos</h1><button class="edit">E</button>
-                    <h4>URSS</h4><button class="edit">E</button>
-                    <p>Tanque sovietico para gatos, totalmente antijudios</p><button class="edit">E</button>
-                    <br>
-                    <h3>$200 MXN</h3><button class="edit">E</button>
-                    <h5>22 Disponibles</h5><button class="edit">E</button>
-                    
-                    <input type="number"> <br>
-                    <button class="boton1indivtodosLP">Comprar</button>
-                    <button class="boton2indivtodosLP">+</button>
-                </div>
+        <!-- Productos Dinamicos -->
+        <section class="fondotodosLP" id="productos">
+            <h1>Todos los productos</h1>
+            <div class="todosLP" id="contenedorProductos"></div>
 
+            <div class="todosLP" id="esconder">
                 <div class="indivtodosLP">
-                    <img src="ImgFinal/pelucaparajugadoresdelol.jpg" alt="casco"><button class="edit">E</button>
-                    <h1>Peluca para fans del temach</h1><button class="edit">E</button>
-                    <h4>ByteDance</h4><button class="edit">E</button>
-                    <p>Mi compa, usted estando pedo, se compraria esta peluca?</p><button class="edit">E</button>
-                    <br>
-                    <h3>$130 MXN</h3><button class="edit">E</button>
-                    <h5>2 Disponibles</h5><button class="edit">E</button>
-                    
-                    <input type="number"> <br>
-                    <button class="boton1indivtodosLP">Comprar</button>
-                    <button class="boton2indivtodosLP">+</button>
+
+                    <img id="agregarProd" src="ImgFinal/plus.png" alt="casco">
+                    <h1>Agregar Producto</h1>
+
                 </div>
             </div>
 
-            <div class="todosLP">
-                <div class="indivtodosLP">
-                    <img src="ImgFinal/Espada para perros.jpg" alt="casco"><button class="edit">E</button>
-                    <h1>Untador de mantequilla para perros</h1><button class="edit">E</button>
-                    <h4>PRI</h4><button class="edit">E</button>
-                    <p>Untador de mantequilla completamente inofensivo para caninos</p><button class="edit">E</button>
-                    <br>
-                    <h3>$30 MXN</h3><button class="edit">E</button>
-                    <h5>10 Disponibles</h5><button class="edit">E</button>
-                    
-                    <input type="number"> <br>
-                    <button class="boton1indivtodosLP">Comprar</button>
-                    <button class="boton2indivtodosLP">+</button>
-                </div>
-                <div class="indivtodosLP">
-                    <img src="ImgFinal/pantalones para gallos.jpg" alt="casco"><button class="edit">E</button>
-                    <h1>Pantalones para gallos</h1><button class="edit">E</button>
-                    <h4>Sonora shop</h4><button class="edit">E</button>
-                    <p>Pantalonsitos para gallos simplemente sublimes, irradia facha y elegancia a donde quiera que va<button class="edit">E</button>yas</p>
-                    <br>
-                    <h3>$130 MXN</h3><button class="edit">E</button>
-                    <h5>2 Disponibles</h5><button class="edit">E</button>
-                    
-                    <input type="number"> <br>
-                    <button class="boton1indivtodosLP">Comprar</button>
-                    <button class="boton2indivtodosLP">+</button>
-                </div>
-
-                <div class="indivtodosLP">
-                    <img src="ImgFinal/mascarita.jpeg" alt="casco"><button class="edit">E</button>
-                    <h1>Mascara anti robo para robo</h1><button class="edit">E</button>
-                    <h4>Rockstar</h4><button class="edit">E</button>
-                    <p>Capucha de algodon flexible antibalas, proporciona una proteccion completa contra el sol
-                        ademas de hacerte un skincare 
-                    </p><button class="edit">E</button>
-                    <br>
-                    <h3>$130 MXN</h3><button class="edit">E</button>
-                    <h5>2 Disponibles</h5><button class="edit">E</button>
-                    
-                    <input type="number"> <br>
-                    <button class="boton1indivtodosLP">Comprar</button>
-                    <button class="boton2indivtodosLP">+</button>
-                </div>
-            </div
         </section>
 </body>
 </html>

@@ -5,16 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link rel="stylesheet" href="CssFinal/allcolors.css">
-    <script src="JSFinal/formularioDinamic.js"></script>
 </head>
 <body>
-    <script>
-        // JavaScript para mostrar el alert box al cargar la página
-        window.onload = function() {
-        var mensaje = "Esta seccion de registrarse no esta disponible, para iniciar sesion hagalo desde el apartado de iniciar sesion";
-        alert(mensaje);
-        };
-        </script>
     <div class="formularioR">
         <form id="primerFormulario">
             <br><br>
@@ -51,9 +43,9 @@
             <input type="password" name="confirmContraR" id="confirmContraR" required><br><br><br>
 
             <button class="botones" id="retrocederBtn">Retroceder</button>
-            <button class="botones" id="finalizarBtn">Finalizar</button><br><br>
+            <button type="submit" class="botones" id="finalizarBtn">Finalizar</button><br><br>
         </form>
     </div>
-    <script></script>
+    <script type="module" src="JSFinal/formularioDinamic.js"></script>
 </body>
 </html>

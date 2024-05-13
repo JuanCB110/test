@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico</title>
+    <link rel="stylesheet" href="CssFinal/allcolors.css">
+    <link rel="stylesheet" href="CssFinal/navBar2.css">
+    <!-- Incluir la biblioteca Chart.js -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Incluye los archivos de React y ReactDOM desde un CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script type = "module" src="JSFinal/barraDesplegableAdmin.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="interior">
+        <a class="logo"><img src="ImgFinal/LogoNavBar.png" alt="Logo" id="logoMarca"></a>
+        <nav class="navegacion">
+            <ul>
+            <li class="submenu">
+    
+                <!-- Cambiar por el ID del usuario -->
+                <a href="#" id="cuentaCC"> &nbsp; &nbsp; &nbsp;Usuario &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+                <ul class="hijos"> <br>
+                    <!-- Barra desplegable personalizable -->
+                    <li><a href="config.html">Configuración</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                    <li><a href="mensajes.html">Bandeja de Correos</a></li>
+                    <li><a href="graficas.html">Graficos</a></li>
+                    <li><a href="Menuprincip.html" id="csesion">Cerrar sesión</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section class="grafica">
+        <section class="grafica">
+            <div class="formularioR">
+                <label for="fechaNacR"><b>Ingrese Fecha por Dia</b></label>
+                <input type="date" name="Porfecha" id="Porfecha">
+                <button class="botones" id="generar">Generar</button>
+            </div>
+        </section>
+
+        <section class="grafica">
+            <table id="tablaVentas"></table>
+        </section>
+
+    </section>
+
+    <section class="grafica">
+        <section class="grafica">
+            <div class="formularioR">
+                <label for="PorMes"><b>Ingrese Fecha Por Mes (Cualquier Dia del Mes Deseado)</b></label>
+                <input type="date" name="PorMes" id="PorMes">
+                <button class="botones" id="generarMes">Generar</button>
+            </div>
+        </section>
+
+        <section class="grafica">
+            <table id="tablaVentasMes"></table>
+        </section>
+
+    </section>
+
+    <section class="grafica">
+        <section class="grafica">
+            <div class="formularioR">
+                <label for="PorRango"><b>Ingrese Rangos de Fecha</b></label>
+                <input type="date" name="PorRango" id="PorRango1">
+                <input type="date" name="PorRango2" id="PorRango2">
+                <button class="botones" id="generarRango">Generar</button>
+            </div>
+        </section>
+
+        <section class="grafica">
+            <table id="tablaVentasRango"></table>
+        </section>
+
+    </section>
+
+    <section class="grafica">
+
+        <div>
+            <label for="newman">Descendente</label>
+        </div>
+
+        <section class="grafica">
+            <canvas id="graficoProductos" width="800"></canvas>
+        </section>
+        <br>
+        <br>
+        <section class="grafica">
+            <canvas id="graficoProductosIng" width="800"></canvas>
+        </section>
+        <br>
+        <br>
+        <section class="grafica">
+            <canvas id="graficoClientes" width="800"></canvas>
+        </section>
+        <br>
+        <br>
+        <section class="grafica">
+            <canvas id="graficoClientesIng" width="800"></canvas>
+        </section>
+
+
+
+        <div>
+            <label for="newman">Ascendente</label>
+        </div>
+
+        <section class="grafica">
+            <canvas id="graficoProductosA" width="800"></canvas>
+        </section>
+        <br>
+        <br>
+        <section class="grafica">
+            <canvas id="graficoProductosIngA" width="800"></canvas>
+        </section>
+        <br>
+        <br>
+        <section class="grafica">
+            <canvas id="graficoClientesA" width="800"></canvas>
+        </section>
+        <br>
+        <br>
+        <section class="grafica">
+            <canvas id="graficoClientesIngA" width="800"></canvas>
+        </section>
+
+    </section>
+
+</body>
+</html>
