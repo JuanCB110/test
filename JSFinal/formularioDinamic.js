@@ -45,13 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
             nombrec.style.borderColor = 'red';
         }
 
-        // Validar la edad (solo números, mayores a 0, menores a 100)
-        var edad = parseInt(fechaNacimiento.value, 10);
-        if (isNaN(edad) || edad <= 0 || edad >= 100) {
-            errores.push('Ingrese una edad válida (solo números, mayores a 0, menores a 100).');
-            fechaNacimiento.style.borderColor = 'red';
-        }
-
         // Validar el correo electrónico
         if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(correo.value)) {
             errores.push('Ingrese un correo electrónico válido.');
